@@ -2,7 +2,8 @@
 config-version = "2.7"
 
 # What port should the proxy be bound to? By default, we'll bind to all addresses on port 25565.
-bind = "0.0.0.0:25565"
+bind = "0.0.0.0:25567" 
+# 7=6 portの6を7に変えてみた☆
 
 # What should be the MOTD? This gets displayed when the player adds your server to
 # their server list. Only MiniMessage format is accepted.
@@ -16,7 +17,7 @@ show-max-players = 500
 online-mode = false
 
 # Should the proxy enforce the new public key security standard? By default, this is on.
-force-key-authentication = true
+force-key-authentication = false
 
 # If client's ISP/AS sent from this proxy is different from the one from Mojang's
 # authentication server, the player is kicked. This disallows some VPN and proxy
@@ -36,8 +37,8 @@ prevent-client-proxy-connections = false
 #                  Velocity's native forwarding. Only applicable for Minecraft 1.13 or higher.
 player-info-forwarding-mode = "NONE"
 
-# If you are using modern or BungeeGuard IP forwarding, configure a file that contains a unique secret here.
-# The file is expected to be UTF-8 encoded and not empty.
+    # If you are using modern or BungeeGuard IP forwarding, configure a file that contains a unique secret here.
+    # The file is expected to be UTF-8 encoded and not empty.
 forwarding-secret-file = "forwarding.secret"
 
 # Announce whether or not your server supports Forge. If you run a modded server, we
